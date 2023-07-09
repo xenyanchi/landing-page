@@ -1,45 +1,41 @@
 @charset "UTF-8";
 
 body {
-    background-color: #ffffff;
+    background-color: #51a9ce;
     margin:0;
 }
 
 .main {
-    background: url(../images/Background.png); 
+    background: url(../images/Background_faded.png);
     background-repeat: no-repeat;
-    background-position: top; 
-    text-align: center;
-    background-size: cover ;
+    background-position: center;
     height: 5241px;
+    width: 100%;
+    text-align: center;
+}
+
+.group1 {
+    padding-top: 50px;
+    padding-left: 0px;
 }
 
 .group2 {
-    margin-top: 510px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    padding-top: 180px;
+    padding-left: 0px;
 }
 
 .group3 {
-    margin-top: 70px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    padding-top: 50px;
+    padding-left: 0px;
 }
 
 .group4 {
-    margin-top: 380px;
-    display: block;
-    margin-left: 240px;
-    margin-right: auto;
-    width: 50%;
+    padding-left: 0px;
 }
 
 .group4-buy-buttons {
-    text-align: unset;
+    padding-top: 10px;
+    padding-left: 13px;
 }
 
 .group4-buy-buttons ul {
@@ -68,19 +64,38 @@ body {
 }
 
 .group5 {
-    margin-top: 70px;
-    display: block;
-    margin-left: 300px;
-    margin-right: auto;
-    width: 50%;
+    padding-top: 118px;
+    margin-left: -50px;
 }
 
 .group6 {
-    margin-top: 70px;
-    display: block;
-    margin-left: 300px;
-    margin-right: auto;
-    width: 50%;
+    position: relative;
+    top: -135px;
+}
+
+.img-group4-mid {
+    margin-left: 165px;
+}
+
+.img-group4-button:hover {
+    transform: scale(1.1);
+}
+
+.img-group-6:hover {
+    transform: scale(1.1);
+}
+
+.group7 {
+    position: relative;
+    top: 650px;
+}
+
+.img-group7-mid {
+    margin-left: 65px;
+}
+
+.img-group7-button:hover {
+    transform: scale(1.1);
 }
 
 .footer {
@@ -264,3 +279,31 @@ https://tamatuf.net/html-css/css-background-gradient-img/
     transform: translate(0,0);
     -webkit-transform: translate(0,0);
     }
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+.reveal.active {
+    opacity: 1;
+}
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}

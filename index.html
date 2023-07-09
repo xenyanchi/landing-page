@@ -8,7 +8,24 @@
   <title>Xenia D'Angelo</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- jquery 1 -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- jquery 2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+  <!-- jquery 3 -->
+  <script>
+    $(function() {
+      $('.list-mv01').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if(isInView){
+          $(this).stop().addClass('mv01');
+        }
+        else{
+          $(this).stop().removeClass('mv01');
+        }
+      });
+    });
+  </script>
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -17,31 +34,42 @@
   
   <main id="main" class="main">
 
-    <section id="group1" class="group1">
+    <section id="group1" class="group1 ">
       <img src="images/Group%201.png" class="img-group1" alt="">
     </section>
 
-    <section id="group2" class="group2">
+    <section id="group2" class="group2 reveal fade-left">
       <img src="images/Group%202.png" class="img-group2" alt="">
     </section>
 
-    <section id="group3" class="group3">
+    <section id="group3" class="group3 reveal fade-left">
       <img src="images/Group%203.png" class="img-group3" alt="">
     </section>
 
-    <section id="group4" class="group4">
-      <img src="images/Group%204.png" class="img-group4" alt="">
-      <div class="group4-buy-buttons">
-        <img src="images/button_buynow.png" alt="">
+    <section id="group4" class="group4 reveal fade-left">
+      <img src="images/Group%204.png" class="img-group4 animation-product" alt="">
+      <div class="group4-buy-buttons animation-title">
+        <img src="images/button_buynow.png" alt="" class="img-group4-button">
+        <img src="images/button_buynow.png" alt="" class="img-group4-mid img-group4-button">
+        <img src="images/button_buynow.png" alt="" class="img-group4-mid img-group4-button">
+        <img src="images/button_buynow.png" alt="" class="img-group4-mid img-group4-button">
       </div>
     </section>
 
-    <section id="group5" class="group5">
+    <section id="group5" class="group5 reveal fade-left">
       <img src="images/Group%205.png" class="img-group5" alt="">
     </section>
 
-    <section id="group6" class="group6">
-      <img src="images/big_final_text.png" class="img-group6" alt="">
+    <section id="group6" class="group6 reveal fade-left">
+      <img src="images/button_buynow_BIG.png" class="img-group-6" alt="">
+    </section>
+
+    <section id="group7" class="group7">
+      <div class="group7-buy-buttons">
+        <img src="images/icon_ig.png" class="img-group7-button" alt="">
+        <img src="images/icon_twitter.png" class="img-group7-mid img-group7-button" alt="">
+        <img src="images/icon_youtube.png" class="img-group7-mid img-group7-button" alt="">
+      </div>
     </section>
   </main><!-- End #main -->
 
