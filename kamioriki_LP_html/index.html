@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>紙折り機のランディングページ</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!-- jquery 1 -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- jquery 2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+  <!-- jquery 3 -->
+  <script>
+    $(function() {
+    $('.list-mv01').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    if(isInView){
+    $(this).stop().addClass('mv01');
+    }
+    else{
+    $(this).stop().removeClass('mv01');
+    }
+    });
+    });
+    </script>
+
+</head>
+
+<body>
+
+  <header class="lp-header">
+    <h2 class="heading-sub">
+      A4用紙の三つ折り作業を効率化！
+    </h2>
+  </header>
+
+ <div class="mainvisual-wrapper">
+
+    <div class="mainvisual-left">
+      <h1><img src="images/title.png" alt="MA40" class="title-img animation-title"></h1>
+    
+      <div><img src="images/price.png" alt="price box" class="price-img"></div>
+    </div>
+   
+    <div class="mainvisual-right">
+      <img src="images/product.png" alt="printer" class="product-photo animation-product">
+    </div>
+
+ </div>
+
+ <div class="illust-wrapper">
+  <img src="images/illust.png" alt="girl illust" class="illust-img">
+</div>
+
+
+  <div><a href="" class="btn">ご購入はこちら！</a></div>
+
+  <h2 class="midashi-ma40a">MA40αの特徴</h2>
+
+  <p class="main-text">
+    小さいボディで高性能なスゴイやつ！。卓上だから近くに置けて、すぐに使えます！内三つプラス折り・三枚重ね折りも可能です！
+    省スペースで高性能！近くに置けるからすぐに使えます！
+  </p>
+
+ <!-- jquery 4 -->
+  <ol class="tokuchou-list list-mv01">
+    <li class="tokuchou-item"><img src="images/point1.png" alt="point image 1" class="tokuchou-img"></li>
+    <li class="tokuchou-item"><img src="images/point2.png" alt="point image 2" class="tokuchou-img"></li>
+    <li class="tokuchou-item"><img src="images/point3.png" alt="point image 3" class="tokuchou-img"></li>
+  </ol>
+
+</body>
+
+</html>
