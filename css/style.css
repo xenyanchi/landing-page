@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+body {
+    background-color: #ffffff;
+    margin:0;
+}
+
+.main {
+    background: url(../images/Background.png); 
+    background-repeat: no-repeat;
+    background-position: top; 
+    text-align: center;
+    background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+
+
+html {
+height: 100%
+}
+
+/* 
+参考ページ
+CSSで文字を縁取りする方法【太い縁でもキレイに表示】
+https://csshtml.work/stroke/#3px_2 */
+
+/* CSSで背景画像とグラデーションを重ねる方法
+https://tamatuf.net/html-css/css-background-gradient-img/ 
+*/
+
+
+.lp-header{
+    width: 100%;
+    height: 82px;
+    /* background-color: blueviolet; */
+    background: linear-gradient(to bottom, #ffffff, #CCCCCC);
+    
+}
+
+.heading-sub{
+    color: #FF9A0A;
+}
+
+.mainvisual-wrapper{
+    /* To put both divs next to each other */
+    display: flex;
+    padding: 0 40px;
+    /* background-color: blue; */
+    /* Write url, press enter, then dot dot slash, and press enter again, select images */
+    background: url(../images/background.png),no-repeat,linear-gradient(to bottom,#118FFF,#118FFF 85%,#ffffff); 
+    /* To cover the entire div with the full image */
+    background-size: cover;
+}
+
+.mainvisual-left{
+    width: 50%;
+    /* background-color: aqua; */
+
+}
+
+.title-img{
+    /* To make the image always same size regardless screen width */
+    width: 100%;
+    margin: 85px 0 60px 0;
+}
+
+.price-img{
+    width: 100%;
+}
+
+.mainvisual-right{
+    width: 50%;
+    /* background-color: brown; */
+
+}
+
+.product-photo{
+    width: 100%;
+    margin: 48px 0 0 0;
+}
+
+.illust-wrapper{
+    padding: 0 40px;
+    /* background-color: chartreuse; */
+}
+
+.illust-img{
+    width: 100%;
+}
+
+/* button */
+.btn{
+    display: block;
+    width: 862px;
+    height: 80px;
+    margin: 50px auto;
+    background-image: url(../images/btn.png);
+    background-repeat: no-repeat;
+    /* to make the text disappear (actually out of screen) */
+    text-indent: -9999px;
+    /* background-color: #118FFF; */
+}
+
+/* action of changing color of button */
+.btn:hover{
+    background-position: center bottom;
+}
+
+.midashi-ma40a{
+    width: 95%;
+    height: 69px;
+    margin: 0 auto;
+    background-image: url(../images/midashi.png);
+    background-repeat: no-repeat;
+    /* image matches the size we want */
+    background-size: 100% 69%;
+    /* to align the text at the bottom of the bg image */
+    line-height: 69px;
+    text-indent: 2.5em;
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: bold;
+    /* background-color: #FF9A0A; */
+}
+
+.main-text{
+    width: 90%;
+    margin: 23px auto 47px auto;
+    font-size: 20px;
+    line-height: 185%;
+    background-color: aqua;
+}
+
+.tokuchou-list{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    /* to justify the images along the background that is already centered, and equally spaced */
+    justify-content: space-between;
+    background-color: #FF9A0A;
+}
+
+.tokuchou-item{
+    width: 30%;
+}
+
+.tokuchou-img{
+    width: 100%;
+}
+
+.animation-title {
+    animation: fadeIn-title 1s ease 0.5s 1 normal backwards;
+    }
+    @keyframes fadeIn-title {
+    from {
+    opacity: 0;
+    transform: translateY(10px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.animation-product {
+    animation: fadeIn-product 0.3s ease 0.4s 1 normal backwards;
+    }
+    @keyframes fadeIn-product {
+    from {
+    opacity: 0;
+    transform: translateY(10px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+
+/* jquery 5 (scrolling animation) */ 
+.list-mv01{
+    transition: .8s;
+    opacity: 0;
+    transform: translate(0,60px);
+    -webkit-transform: translate(0,60px);
+    }
+    .mv01{
+    opacity: 1.0;
+    transform: translate(0,0);
+    -webkit-transform: translate(0,0);
+    }
